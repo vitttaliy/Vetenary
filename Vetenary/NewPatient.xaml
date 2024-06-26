@@ -1,0 +1,30 @@
+﻿<Window x:Class="Vetenary.NewPatient"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Vetenary"
+        mc:Ignorable="d"
+        Title="PatientInfo" Height="569" Width="639" ResizeMode="NoResize">
+    <Grid Height="457" VerticalAlignment="Top">
+        <Image x:Name="Photo" Source="/Resources/noimg.jpg" Margin="5,28,378,228" PreviewMouseDown="Photo_PreviewMouseDown" Cursor="Hand"></Image>
+        <TextBox x:Name="Name" Margin="347,29,10,390"></TextBox>
+        <TextBox x:Name="Owner" Margin="347,187,10,228"/>
+        <Label FontSize="20" Content="Ім'я" Margin="299,30,265,390" RenderTransformOrigin="0.955,0.541"></Label>
+        <Label FontSize="20" Content="Господар" Margin="251,191,275,228"/>
+        <Label FontSize="20" Content="Вік" Margin="299,91,284,328" RenderTransformOrigin="0.955,0.541"/>
+        <TextBox x:Name="Age" Margin="347,91,220,328"/>
+        <Label FontSize="20" Content="Стать" Margin="280,144,284,275" RenderTransformOrigin="0.955,0.541"/>
+        <ComboBox x:Name="Gender" Margin="347,144,208,275"/>
+        <Label FontSize="20" Content="Процедури&#10;та призначені&#10;ліки" Margin="10,247,476,123"/>
+        <TextBox x:Name="ProceduresAndMedicine" Margin="155,247,10,111"/>
+        <Label FontSize="20" Content="Процедури&#xA;та призначені&#xA;ліки" Margin="10,247,476,106"/>
+        <TextBox x:Name="MedHistory" Margin="155,351,10,2"/>
+        <Label FontSize="20" Content="Медична&#xA;історія" Margin="10,373,476,10"/>
+        <Label FontSize="20" Content="Вид" Margin="424,90,152,328" RenderTransformOrigin="0.955,0.541"/>
+        <ComboBox x:Name="Species" Margin="492,90,8,327" SelectionChanged="AnimalsTypes_SelectionChanged"/>
+        <Button Content="Додати запис" FontSize="20" Margin="224,481,208,-60" Click="Button_Click_1"/>
+        <Label FontSize="20" Content="Порода" Margin="428,142,106,276" RenderTransformOrigin="0.955,0.541"/>
+        <ComboBox x:Name="Breed" Margin="506,142,10,275"/>
+    </Grid>
+</Window>
